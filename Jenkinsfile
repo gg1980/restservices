@@ -9,6 +9,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                     mvn compile
+                    docker build -t rest-web-bank
                 '''
             }
         }
